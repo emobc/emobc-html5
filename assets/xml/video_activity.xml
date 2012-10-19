@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<levelData>
+  <data>
+    <dataId>video</dataId>
+    <headerText>Video de Shamisen</headerText>
+    <local>false</local>
+    <videoUrl>http://www.youtube.com/watch?v=w5rs7pfZuPs</videoUrl>
+  </data>
+</levelData>

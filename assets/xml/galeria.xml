@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<levelData>
+  <data>
+    <dataId>galeria</dataId>
+    <headerText>Fotos de Japon</headerText>
+    <galery>
+      <image>
+        <imageFile>assets/images/photo/japon_1.jpg</imageFile>
+      </image>
+      <image>
+        <imageFile>assets/images/photo/japon_2.jpg</imageFile>
+      </image>
+      <image>
+        <imageFile>assets/images/photo/japon_3.jpg</imageFile>
+      </image>
+    </galery>
+  </data>
+</levelData>

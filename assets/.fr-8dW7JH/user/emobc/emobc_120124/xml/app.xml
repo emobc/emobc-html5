@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+  <title>LSWC 2012</title>
+  <coverFileName>portada.xml</coverFileName>
+  <stylesFileName>styles.xml</stylesFileName>
+  <formatsFileName>formats.xml</formatsFileName>
+  <entryPoint>
+    <pointLevelId/>
+    <pointDataId/>
+  </entryPoint>
+  <menu>
+    <topMenu/>
+    <bottomMenu/>
+  </menu>
+  <banner>
+    <type>yoc</type>
+    <!-- puede ser admob / yoc -->
+    <position/>
+    <!-- puede ser top / bottom -->
+    <id/>
+    <!-- url de php que rota o el id de admob -->
+  </banner>
+  <levels>
+    <level>
+      <levelId>8149</levelId>
+      <levelTitle>Información</levelTitle>
+      <levelFile>Información_8149.xml</levelFile>
+      <levelType>LIST_ACTIVITY</levelType>
+      <levelXib/>
+      <levelTransition>slide</levelTransition>
+    </level>
+    <level>
+      <levelId>6595</levelId>
+      <levelTitle>futuro calendario</levelTitle>
+      <levelFile>futuro_calendario_6595.xml</levelFile>
+      <levelType>QR_ACTIVITY</levelType>
+      <levelXib/>
+      <levelTransition>slide</levelTransition>
+    </level>
+    <level>
+      <levelId>9614</levelId>
+      <levelTitle>Trivial libre</levelTitle>
+      <levelFile>Trivial_libre_9614.xml</levelFile>
+      <levelType>QUIZ_ACTIVITY</levelType>
+      <levelXib/>
+      <levelTransition>slide</levelTransition>
+    </level>
+    <level>
+      <levelId>4671</levelId>
+      <levelTitle>Contacto</levelTitle>
+      <levelFile>Contacto_4671.xml</levelFile>
+      <levelType>FORM_ACTIVITY</levelType>
+      <levelXib/>
+      <levelTransition>slide</levelTransition>
+    </level>
+    <level>
+      <levelId>1518</levelId>
+      <levelTitle>Patrocinadores</levelTitle>
+      <levelFile>Patrocinadores_1518.xml</levelFile>
+      <levelType>LIST_ACTIVITY</levelType>
+      <levelXib/>
+      <levelTransition>slide</levelTransition>
+    </level>
+    <level>
+      <levelId>2959</levelId>
+      <levelTitle>¿Qué es LSWC 12?</levelTitle>
+      <levelFile>¿Qué_es_LSWC_12?_2959.xml</levelFile>
+      <levelType>IMAGE_TEXT_DESCRIPTION_ACTIVITY</levelType>
+      <levelXib/>
+      <levelTransition>slide</levelTransition>
+    </level>
+    <level>
+      <levelId>4611</levelId>
+      <levelTitle>Presentación</levelTitle>
+      <levelFile>Presentación_4611.xml</levelFile>
+      <levelType>IMAGE_TEXT_DESCRIPTION_ACTIVITY</levelType>
+      <levelXib/>
+      <levelTransition>slide</levelTransition>
+    </level>
+    <level>
+      <levelId>1055</levelId>
+      <levelTitle>Información útil</levelTitle>
+      <levelFile>Información_útil_1055.xml</levelFile>
+      <levelType>LIST_ACTIVITY</levelType>
+      <levelXib/>
+      <levelTransition>slide</levelTransition>
+    </level>
+    <level>
+      <levelId>1950</levelId>
+      <levelTitle>Hoteles</levelTitle>
+      <levelFile>Hoteles_1950.xml</levelFile>
+      <levelType>LIST_ACTIVITY</levelType>
+      <levelXib/>
+      <levelTransition>slide</levelTransition>
+    </level>
+    <level>
+      <levelId>450</levelId>
+      <levelTitle>NH OBRADOIRO 5*****</levelTitle>
+      <levelFile>NH_OBRADOIRO_5*****_450.xml</levelFile>
+      <levelType>IMAGE_TEXT_DESCRIPTION_ACTIVITY</levelType>
+      <levelXib/>
+      <levelTransition>slide</levelTransition>
+    </level>
+    <level>
+      <levelId>6252</levelId>
+      <levelTitle>HOTEL PUERTA DEL CAMINO 4****</levelTitle>
+      <levelFile>HOTEL_PUERTA_DEL_CAMINO_4****_6252.xml</levelFile>
+      <levelType>IMAGE_TEXT_DESCRIPTION_ACTIVITY</levelType>
+      <levelXib/>
+      <levelTransition>slide</levelTransition>
+    </level>
+    <level>
+      <levelId>8189</levelId>
+      <levelTitle>TRYP SANTIAGO 4****</levelTitle>
+      <levelFile>TRYP_SANTIAGO_4****_8189.xml</levelFile>
+      <levelType>IMAGE_TEXT_DESCRIPTION_ACTIVITY</levelType>
+      <levelXib/>
+      <levelTransition>slide</levelTransition>
+    </level>
+    <level>
+      <levelId>5741</levelId>
+      <levelTitle>A TAFONA DO PEREGRINO 3***</levelTitle>
+      <levelFile>A_TAFONA_DO_PEREGRINO_3***_5741.xml</levelFile>
+      <levelType>IMAGE_TEXT_DESCRIPTION_ACTIVITY</levelType>
+      <levelXib/>
+      <levelTransition>slide</levelTransition>
+    </level>
+    <level>
+      <levelId>5635</levelId>
+      <levelTitle>HOTEL CAPITAL DE GALICIA *</levelTitle>
+      <levelFile>HOTEL_CAPITAL_DE_GALICIA_*_5635.xml</levelFile>
+      <levelType>IMAGE_TEXT_DESCRIPTION_ACTIVITY</levelType>
+      <levelXib/>
+      <levelTransition>slide</levelTransition>
+    </level>
+    <level>
+      <levelId>5392</levelId>
+      <levelTitle>¿Cómo llegar?</levelTitle>
+      <levelFile>¿Cómo_llegar?_5392.xml</levelFile>
+      <levelType>BUTTONS_ACTIVITY</levelType>
+      <levelXib/>
+      <levelTransition>slide</levelTransition>
+    </level>
+    <level>
+      <levelId>1342</levelId>
+      <levelTitle>En avión</levelTitle>
+      <levelFile>En_avión_1342.xml</levelFile>
+      <levelType>IMAGE_TEXT_DESCRIPTION_ACTIVITY</levelType>
+      <levelXib/>
+      <levelTransition>slide</levelTransition>
+    </level>
+    <level>
+      <levelId>7214</levelId>
+      <levelTitle>En tren</levelTitle>
+      <levelFile>En_tren_7214.xml</levelFile>
+      <levelType>IMAGE_TEXT_DESCRIPTION_ACTIVITY</levelType>
+      <levelXib/>
+      <levelTransition>slide</levelTransition>
+    </level>
+    <level>
+      <levelId>1514</levelId>
+      <levelTitle>En autobús</levelTitle>
+      <levelFile>En_autobús_1514.xml</levelFile>
+      <levelType>IMAGE_TEXT_DESCRIPTION_ACTIVITY</levelType>
+      <levelXib/>
+      <levelTransition>slide</levelTransition>
+    </level>
+    <level>
+      <levelId>9295</levelId>
+      <levelTitle>En coche</levelTitle>
+      <levelFile>En_coche_9295.xml</levelFile>
+      <levelType>IMAGE_TEXT_DESCRIPTION_ACTIVITY</levelType>
+      <levelXib/>
+      <levelTransition>slide</levelTransition>
+    </level>
+    <level>
+      <levelId>9699</levelId>
+      <levelTitle>Mapa</levelTitle>
+      <levelFile>Mapa_9699.xml</levelFile>
+      <levelType>MAP_ACTIVITY</levelType>
+      <levelXib/>
+      <levelTransition/>
+    </level>
+    <level>
+      <levelId>9585</levelId>
+      <levelTitle>Web</levelTitle>
+      <levelFile>Web_9585.xml</levelFile>
+      <levelType>WEB_ACTIVITY</levelType>
+      <levelXib/>
+      <levelTransition/>
+    </level>
+    <level>
+      <levelId>7318</levelId>
+      <levelTitle>Gold</levelTitle>
+      <levelFile>Gold_7318.xml</levelFile>
+      <levelType>IMAGE_GALLERY_ACTIVITY</levelType>
+      <levelXib/>
+      <levelTransition>slide</levelTransition>
+    </level>
+    <level>
+      <levelId>4319</levelId>
+      <levelTitle>Silver</levelTitle>
+      <levelFile>Silver_4319.xml</levelFile>
+      <levelType>IMAGE_GALLERY_ACTIVITY</levelType>
+      <levelXib/>
+      <levelTransition>slide</levelTransition>
+    </level>
+    <level>
+      <levelId>8294</levelId>
+      <levelTitle>Bronze</levelTitle>
+      <levelFile>Bronze_8294.xml</levelFile>
+      <levelType>IMAGE_GALLERY_ACTIVITY</levelType>
+      <levelXib/>
+      <levelTransition>slide</levelTransition>
+    </level>
+    <level>
+      <levelId>2277</levelId>
+      <levelTitle>Cidade da Cultura</levelTitle>
+      <levelFile>Cidade_da_Cultura_2277.xml</levelFile>
+      <levelType>IMAGE_TEXT_DESCRIPTION_ACTIVITY</levelType>
+      <levelXib/>
+      <levelTransition>slide</levelTransition>
+    </level>
+  </levels>
+</application>

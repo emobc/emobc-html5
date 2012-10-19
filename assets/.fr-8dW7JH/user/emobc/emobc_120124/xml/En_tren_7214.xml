@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<levelData>
+  <data>
+    <dataId>7214</dataId>
+    <headerText>En tren</headerText>
+    <imageFile></imageFile>
+    <geoRef/>
+    <text>Estación de tren de Santiago de Compostela&#13;
+Situación: C/ Hórreo, s/n&#13;
+Tel:(+34) 902 240 202 /(+34) 981 591 859&#13;
+www.renfe.es&#13;
+Servicios&#13;
+Alquiler de vehículos, cafetería, cajeros automáticos, internet.</text>
+    <nextLevel>
+      <nextLevelLevelId/>
+      <nextLevelDataId/>
+    </nextLevel>
+  </data>
+</levelData>

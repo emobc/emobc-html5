@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<levelData>
+  <data>
+    <dataId>1950</dataId>
+    <headerText>Hoteles</headerText>
+    <order>false</order>
+    <list>
+      <listItem>
+        <description/>
+        <text>NH OBRADOIRO 5*****</text>
+        <imageFile></imageFile>
+        <nextLevel>
+          <nextLevelDataId>450</nextLevelDataId>
+          <nextLevelLevelId>450</nextLevelLevelId>
+        </nextLevel>
+      </listItem>
+      <listItem>
+        <description/>
+        <text>HOTEL PUERTA DEL CAMINO 4****</text>
+        <imageFile></imageFile>
+        <nextLevel>
+          <nextLevelDataId>6252</nextLevelDataId>
+          <nextLevelLevelId>6252</nextLevelLevelId>
+        </nextLevel>
+      </listItem>
+      <listItem>
+        <description/>
+        <text>TRYP SANTIAGO 4****</text>
+        <imageFile></imageFile>
+        <nextLevel>
+          <nextLevelDataId>8189</nextLevelDataId>
+          <nextLevelLevelId>8189</nextLevelLevelId>
+        </nextLevel>
+      </listItem>
+      <listItem>
+        <description/>
+        <text>A TAFONA DO PEREGRINO 3***</text>
+        <imageFile></imageFile>
+        <nextLevel>
+          <nextLevelDataId>5741</nextLevelDataId>
+          <nextLevelLevelId>5741</nextLevelLevelId>
+        </nextLevel>
+      </listItem>
+      <listItem>
+        <description/>
+        <text>HOTEL CAPITAL DE GALICIA *</text>
+        <imageFile></imageFile>
+        <nextLevel>
+          <nextLevelDataId>5635</nextLevelDataId>
+          <nextLevelLevelId>5635</nextLevelLevelId>
+        </nextLevel>
+      </listItem>
+    </list>
+  </data>
+</levelData>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<levelData>
+  <data>
+    <dataId>4671</dataId>
+    <headerText>Contacto</headerText>
+    <nextLevel>
+      <nextLevelLevelId></nextLevelLevelId>
+    </nextLevel>
+    <form>
+      <actionUrl></actionUrl>
+      <field>
+        <fieldLabel>Nombre</fieldLabel>
+        <fieldName>nombre</fieldName>
+        <fieldType>INPUT_TEXT</fieldType>
+      </field>
+      <field>
+        <fieldLabel>Telefono</fieldLabel>
+        <fieldName>telefono</fieldName>
+        <fieldType>INPUT_PHONE</fieldType>
+      </field>
+      <field>
+        <fieldLabel>Email</fieldLabel>
+        <fieldName>email</fieldName>
+        <fieldType>INPUT_EMAIL</fieldType>
+      </field>
+    </form>
+  </data>
+</levelData>

@@ -1,0 +1,57 @@
+#modalContainer {
+    background-color:transparent;
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:10000; /* required by MSIE to prevent actions on lower z-index elements */
+}
+ 
+#alertBox {
+    position:relative;
+    width:300px;
+    min-height:100px;
+    margin-top:50px;
+    border:2px solid #000;
+    background-color:#F2F5F6;
+    background-position:20px 30px;
+}
+ 
+#modalContainer > #alertBox {
+    position:fixed;
+}
+ 
+/*fondo titulo*/
+#alertBox h1 {
+    margin:0;
+    font:bold 0.9em verdana,arial;
+    background-color:#000000;
+    color:#FFF;
+    border-bottom:1px solid #000000;
+    padding:2px 0 2px 5px;
+}
+ 
+/*fondo titulo*/
+#alertBox p {
+    font:0.7em verdana,arial;
+    height:50px;
+    padding-left:5px;
+    margin-left:55px;
+}
+ 
+/*booton*/
+#alertBox #closeBtn {
+    display:block;
+    position:relative;
+    margin:5px auto;
+    padding:3px;
+    border:1px solid #CCCCCC;
+    width:70px;
+    font:0.7em verdana,arial;
+    text-transform:uppercase;
+    text-align:center;
+    color:#000;
+    background-color:#FFF;
+    text-decoration:none;
+}

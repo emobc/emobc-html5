@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<levelData>
+  <data>
+    <dataId>7318</dataId>
+    <headerText>Patrocinadores Gold</headerText>
+    <galery>
+      <image>
+        <imageFile>images/photo/amtega.png</imageFile>
+      </image>
+      <image>
+        <imageFile>images/photo/igape.jpg</imageFile>
+      </image>
+    </galery>
+  </data>
+</levelData>

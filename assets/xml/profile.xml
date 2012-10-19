@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<profile>
+	<field>
+		<fieldType>INPUT_TEXT</fieldType>
+		<fieldLabel>Nombre:</fieldLabel>
+		<fieldName>nombre</fieldName>
+	</field>
+	<field>
+		<fieldType>INPUT_TEXT</fieldType>
+		<fieldLabel>Apellidos:</fieldLabel>
+		<fieldName>apellido</fieldName>
+	</field>
+	<field>
+		<fieldType>INPUT_PICKER</fieldType>
+		<fieldLabel>Profesion:</fieldLabel>
+		<fieldName>profesion</fieldName>
+		<fieldParam>Programador IOS</fieldParam>
+		<fieldParam>Programador Android</fieldParam>
+		<fieldParam>Programador HTML5</fieldParam>
+		<fieldParam>Todas</fieldParam>
+	</field>
+	<field>
+		<fieldType>INPUT_TEXTVIEW</fieldType>
+		<fieldLabel>Aficiones:</fieldLabel>
+		<fieldName>aficiones</fieldName>
+	</field>
+	<field>
+		<fieldType>INPUT_NUMBER</fieldType>
+		<fieldLabel>Edad:</fieldLabel>
+		<fieldName>edad</fieldName>
+	</field>
+	<field>
+		<fieldType>INPUT_EMAIL</fieldType>
+		<fieldLabel>Email:</fieldLabel>
+		<fieldName>email</fieldName>
+		<required/>
+	</field>
+	<field>
+		<fieldType>INPUT_PHONE</fieldType>
+		<fieldLabel>Telefono:</fieldLabel>
+		<fieldName>telefono</fieldName>
+		<fieldParam/>
+	</field>
+	<field>
+		<fieldType>INPUT_CHECK</fieldType>
+		<fieldLabel>Hombre/Mujer:</fieldLabel>
+		<fieldName>sexo</fieldName>
+	</field>
+	<field>
+		<fieldType>INPUT_IMAGE</fieldType>
+		<fieldLabel>Foto:</fieldLabel>
+		<fieldName>foto</fieldName>
+	</field>
+</profile>

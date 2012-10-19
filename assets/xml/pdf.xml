@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<levelData>
+  <data>
+    <dataId>PDF</dataId>
+    <headerText>Plano de metro y tren</headerText>
+    <local>false</local>
+    <pdfUrl>http://www.japanrailpass.net/images/map_en.pdf</pdfUrl>
+  </data>
+</levelData>

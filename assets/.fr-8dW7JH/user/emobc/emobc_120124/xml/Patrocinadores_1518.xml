@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<levelData>
+  <data>
+    <dataId>1518</dataId>
+    <headerText></headerText>
+    <order>false</order>
+    <list>
+      <listItem>
+        <description/>
+        <text>Gold</text>
+        <imageFile>images/icons/medal-gold-32.png</imageFile>
+        <nextLevel>
+          <nextLevelDataId>7318</nextLevelDataId>
+          <nextLevelLevelId>7318</nextLevelLevelId>
+        </nextLevel>
+      </listItem>
+      <listItem>
+        <description/>
+        <text>Silver</text>
+        <imageFile>images/icons/medal-silver-32.png</imageFile>
+        <nextLevel>
+          <nextLevelDataId>4319</nextLevelDataId>
+          <nextLevelLevelId>4319</nextLevelLevelId>
+        </nextLevel>
+      </listItem>
+      <listItem>
+        <description/>
+        <text>Bronze</text>
+        <imageFile>images/icons/medal-bronze-32.png</imageFile>
+        <nextLevel>
+          <nextLevelDataId>8294</nextLevelDataId>
+          <nextLevelLevelId>8294</nextLevelLevelId>
+        </nextLevel>
+      </listItem>
+    </list>
+  </data>
+</levelData>

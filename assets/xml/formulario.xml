@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<levelData>
+  <data>
+    <dataId>formulario</dataId>
+    <headerImageFile>white_title.png</headerImageFile>
+    <headerText>AUTOMERCADO</headerText>
+    <nextLevel>
+      <nextLevelLevelId>coches</nextLevelLevelId>
+      <nextLevelDataId>coches</nextLevelDataId>
+    </nextLevel>
+    <form>
+      <field>
+        <fieldType>INPUT_PICKER</fieldType>
+        <fieldLabel>Marca:</fieldLabel>
+        <fieldName>marca</fieldName>
+        <fieldParam/>
+        <fieldParam>ALFA ROMEO</fieldParam>
+        <fieldParam>AUDI</fieldParam>
+        <fieldParam>BMW</fieldParam>
+        <fieldParam>CHEVROLET</fieldParam>
+        <fieldParam>CHRYSLER</fieldParam>
+        <fieldParam>CITROEN</fieldParam>
+        <fieldParam>DACIA</fieldParam>
+        <fieldParam>DAEWOO</fieldParam>
+        <fieldParam>FIAT</fieldParam>
+        <fieldParam>FORD</fieldParam>
+        <fieldParam>HONDA</fieldParam>
+        <fieldParam>HYUNDAI</fieldParam>
+        <fieldParam>JAGUAR</fieldParam>
+        <fieldParam>JEEP</fieldParam>
+        <fieldParam>KIA</fieldParam>
+        <fieldParam>LAMBORGINI</fieldParam>
+        <fieldParam>LAND ROVER</fieldParam>
+        <fieldParam>LEXUS</fieldParam>
+        <fieldParam>MERCEDES</fieldParam>
+        <fieldParam>MITSUBISHI</fieldParam>
+        <fieldParam>NISSAN</fieldParam>
+        <fieldParam>OPEL</fieldParam>
+        <fieldParam>PEUGEOT</fieldParam>
+        <fieldParam>PORSCHE</fieldParam>
+        <fieldParam>RENAULT</fieldParam>
+        <fieldParam>SAAB</fieldParam>
+        <fieldParam>SCANIA</fieldParam>
+        <fieldParam>SEAT</fieldParam>
+        <fieldParam>SKODA</fieldParam>
+        <fieldParam>SMART</fieldParam>
+        <fieldParam>SSANGYONG</fieldParam>
+        <fieldParam>SUBARU</fieldParam>
+        <fieldParam>SUZUKI</fieldParam>
+        <fieldParam>TOYOTA</fieldParam>
+        <fieldParam>VOLKSWAGEN</fieldParam>
+        <fieldParam>VOLVO</fieldParam>
+        <fieldParam>YAMAHA</fieldParam>
+      </field>
+    </form>
+  </data>
+</levelData>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<level>
+  <title>LSWC 2012</title>
+  <backgroundFileName/>
+  <titleFileName/>
+  <facebook/>
+  <twitter/>
+  <www/>
+  <buttons>
+    <button>
+      <buttonTitle>Información</buttonTitle>
+      <buttonFileName/>
+      <nextLevel>
+        <nextLevelLevelId>8149</nextLevelLevelId>
+        <nextLevelDataId>8149</nextLevelDataId>
+      </nextLevel>
+    </button>
+    <button>
+      <buttonTitle>futuro calendario</buttonTitle>
+      <buttonFileName/>
+      <nextLevel>
+        <nextLevelLevelId>6595</nextLevelLevelId>
+        <nextLevelDataId>6595</nextLevelDataId>
+      </nextLevel>
+    </button>
+    <button>
+      <buttonTitle>Trivial libre</buttonTitle>
+      <buttonFileName/>
+      <nextLevel>
+        <nextLevelLevelId>9614</nextLevelLevelId>
+        <nextLevelDataId>9614</nextLevelDataId>
+      </nextLevel>
+    </button>
+    <button>
+      <buttonTitle>Contacto</buttonTitle>
+      <buttonFileName/>
+      <nextLevel>
+        <nextLevelLevelId>4671</nextLevelLevelId>
+        <nextLevelDataId>4671</nextLevelDataId>
+      </nextLevel>
+    </button>
+    <button>
+      <buttonTitle>Información útil</buttonTitle>
+      <buttonFileName/>
+      <nextLevel>
+        <nextLevelLevelId>1055</nextLevelLevelId>
+        <nextLevelDataId>1055</nextLevelDataId>
+      </nextLevel>
+    </button>
+    <button>
+      <buttonTitle>Web</buttonTitle>
+      <buttonFileName/>
+      <nextLevel>
+        <nextLevelLevelId>9585</nextLevelLevelId>
+        <nextLevelDataId>9585</nextLevelDataId>
+      </nextLevel>
+    </button>
+    <button>
+      <buttonTitle>Cidade da Cultura</buttonTitle>
+      <buttonFileName/>
+      <nextLevel>
+        <nextLevelLevelId>2277</nextLevelLevelId>
+        <nextLevelDataId>2277</nextLevelDataId>
+      </nextLevel>
+    </button>
+  </buttons>
+</level>

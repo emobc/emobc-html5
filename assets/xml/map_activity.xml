@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<levelData>
+  <data>
+    <dataId>mapa</dataId>
+    <headerText/>
+    <localizeMe>true</localizeMe>
+    <showAll>false</showAll>
+    <currentPositionIconFile>punto.png</currentPositionIconFile>
+    <positions>
+      <position>
+        <iconFile>assets/images/icons/punto_mapa.png</iconFile>
+        <imageFile/>
+        <positionTitle>Japon</positionTitle>
+        <positionAdress>Tokio</positionAdress>
+        <positionLat>35.68947430993086</positionLat>
+        <positionLon>139.6917200088501</positionLon>
+        <nextLevel>
+          <nextLevelLevelId>Texto</nextLevelLevelId>
+          <nextLevelDataId>Texto</nextLevelDataId>
+        </nextLevel>
+      </position>
+      <position>
+        <iconFile>assets/images/icons/punto_mapa.png</iconFile>
+        <imageFile/>
+        <positionTitle>Espana</positionTitle>
+        <positionAdress>Por ahi</positionAdress>
+        <positionLat>40.24</positionLat>
+        <positionLon>3.41</positionLon>
+        <nextLevel>
+          <nextLevelLevelId></nextLevelLevelId>
+          <nextLevelDataId></nextLevelDataId>
+        </nextLevel>
+      </position>
+    </positions>
+  </data>
+</levelData>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<levelData>
+	<data>
+		<dataId>audio</dataId>
+		<headerImageFile></headerImageFile>
+		<headerText>Audio prueba</headerText>
+		<local>false</local>
+		<audioUrl>http://irishtimespubny.com/clocks.mp3</audioUrl>		
+	</data>
+</levelData>

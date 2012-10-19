@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<levelData>
+  <data>
+    <dataId>web</dataId>
+    <headerText>Japon</headerText>
+    <local>true</local>
+    <webUrl>assets/html/prueba.html</webUrl>
+  </data>
+</levelData>

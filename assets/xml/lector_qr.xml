@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<levelData>
+	<data>
+		<dataId>Lector QR</dataId>
+		<headerText>Lector Qr</headerText>
+		<qrs>
+			<qr>
+				<idQr>qr1</idQr>
+				<nextLevel>
+					<nextLevelLevelId>Diseño menu 1</nextLevelLevelId>
+					<nextLevelDataId>Diseño menu 1</nextLevelDataId>
+				</nextLevel>
+			</qr>
+			<qr>
+				<idQr>qr2</idQr>
+				<nextLevel>
+					<nextLevelLevelId>Diseño menu 2</nextLevelLevelId>
+					<nextLevelDataId>Diseño menu 2</nextLevelDataId>
+				</nextLevel>
+			</qr>
+			<qr>
+				<idQr>qr3</idQr>
+				<nextLevel>
+					<nextLevelLevelId>Diseño menu 3</nextLevelLevelId>
+					<nextLevelDataId>Diseño menu 3</nextLevelDataId>
+				</nextLevel>
+			</qr>
+		</qrs>
+	</data>
+</levelData>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<levelData>
+  <data>
+    <dataId>Listado</dataId>
+    <headerText/>
+    <imageFile>assets/images/musica_japon.png</imageFile>
+    <geoRef/>
+    <list>
+      <listItem>
+        <description/>
+        <text>Katana</text>
+        <nextLevel>
+          <nextLevelLevelId>Katana</nextLevelLevelId>
+          <nextLevelDataId>Katana</nextLevelDataId>
+        </nextLevel>
+      </listItem>
+      <listItem>
+        <description/>
+        <text>Shamisen</text>
+        <nextLevel>
+          <nextLevelLevelId>Shamisen</nextLevelLevelId>
+          <nextLevelDataId>Shamisen</nextLevelDataId>
+        </nextLevel>
+      </listItem>
+      <listItem>
+        <description/>
+        <text>Plano de metro</text>
+        <nextLevel>
+          <nextLevelLevelId>Plano de metro</nextLevelLevelId>
+          <nextLevelDataId>Plano de metro</nextLevelDataId>
+        </nextLevel>
+      </listItem>
+      <listItem>
+        <description/>
+        <text>Web de japon</text>
+        <nextLevel>
+          <nextLevelLevelId>Web de japon</nextLevelLevelId>
+          <nextLevelDataId>Web de japon</nextLevelDataId>
+        </nextLevel>
+      </listItem>
+    </list>
+  </data>
+</levelData>

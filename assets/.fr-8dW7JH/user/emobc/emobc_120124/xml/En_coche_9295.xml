@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<levelData>
+  <data>
+    <dataId>9295</dataId>
+    <headerText>En coche</headerText>
+    <imageFile></imageFile>
+    <geoRef/>
+    <text>Autopista del Atlántico AP-9: conecta Santiago de Compostela con A Coruña, Ferrol, Pontevedra, Vigo, Tui y frontera portuguesa.&#13;
+Autovía del Noroeste A-6: comunica Galicia con el resto de España a través de la provincia de Lugo (enlace con Santiago a través de la AP-9, en las inmediaciones de A Coruña).&#13;
+Autovía de las Rías Baixas A-52: comunica Galicia con el resto de España a través de la provincia de Ourense (enlace con Santiago a través de la AP-9 en Vigo o a través de la N-525 en Ourense).&#13;
+Autopista AP-53 / AG-53: enlaza Santiago con Lalín, donde conecta con la AG-53 a Ourense y Madrid.&#13;
+Autovía del Cantábrico A-8: conecta Galicia con Francia a través de la costa cantábrica (enlace con Santiago a través de la Autovía del Noroeste A-6).&#13;
+(Fuente: www.santiagoturismo.com)</text>
+    <nextLevel>
+      <nextLevelLevelId/>
+      <nextLevelDataId/>
+    </nextLevel>
+  </data>
+</levelData>
