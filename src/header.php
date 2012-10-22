@@ -50,8 +50,8 @@ echo '<!DOCTYPE html>
 
 	<!-- JQUERY MOBILE -->
 
-<link rel="stylesheet" href="/emobc/css/jquery-ui-1.8.22.custom.css">
-<link rel="stylesheet" href="/emobc/css/jquery.mobile-1.1.1.css" />
+<link rel="stylesheet" href="css/jquery-ui-1.8.22.custom.css">
+<link rel="stylesheet" href="css/jquery.mobile-1.1.1.css" />
 
 <meta name=\'viewport\' content=\'width=device-width, initial-scale=1\'/>
 <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -170,7 +170,6 @@ echo"
 		.align-left{text-align:left;}
 		.center-ads{margin: 0 auto;}
 	</style>
-<script src='/emobc/lib/js/canvas.js'></script>
 </head>
 <body onload='Oculta()'>
 	<!-- SPLASH DIV -->";
@@ -234,7 +233,7 @@ echo"
 						}
 						echo'<li>';
 						if ( isset($imageMenu[$x]) && $imageMenu[$x] != '') {
-							$size = GetImageSize($imageMenu[$x]);
+							$size = GetImageSize($assetsPath.$imageMenu[$x]);
 							echo $linkMenu.'<img src="'.$assetsPath.$imageMenu[$x].'" alt="'.$titleMenu[$x].'" style="width: '.$widthMenu[$x].'px; height: '.$heightMenu[$x].'px; margin-left: '.$marginMenu[$x].'px">';
 						} else {
 							echo $linkMenu.$titleMenu[$x];
@@ -249,8 +248,8 @@ echo"
 			   	echo '
 				<div data-role="navbar">
 					<ul>
-						<li><a href="#" data-rel="back" data-role="button" data-icon="arrow-l" data-theme="a">Regresar</a></li>
-						<li><a href="index.php" rel="external" data-role="button" data-icon="home" data-iconpos="right" data-theme="a">Home</a></li>
+						<li><a href="#" data-rel="back" data-role="button" data-icon="arrow-l">Regresar</a></li>
+						<li><a href="index.php" rel="external" data-role="button" data-icon="home" data-iconpos="right">Home</a></li>
 					</ul>
 				</div>';
 				}
@@ -258,11 +257,21 @@ echo"
 	       } else {
 			if ($activity == 'PORTADA') {
 				if ( isset($imageFile) && $imageFile != '' ) {
-					$size = GetImageSize($imageFile);
+					$size = GetImageSize($assetsPath.$imageFile);
 				   	echo"<div style=\"text-align: center\"><img src='".$assetsPath.$imageFile."' alt='".$title."' height='".$size[1]."'/></div>";
 				}
 				if (!isset($title) || $title != "")
 					echo"<h1>".$title."</h1>";
+			} else {
+				if (isset($_COOKIE['profile'])) {
+				echo'<div data-role="navbar">
+					<ul>
+						<li><a href="index.php" data-rel="back" data-role="button">Home</a></li>
+						<li><a href="profile.php?editmode" data-role="button" data-iconpos="right">Editar</a></li>
+					</ul>
+				</div>';
+				}
+				
 			} 
 	       }
 		echo"</div>

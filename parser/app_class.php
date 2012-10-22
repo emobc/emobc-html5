@@ -54,6 +54,7 @@ function app($xml){
 	$total[11] = $levelTransition;
 	$total[12] = $levelFormatBg;
 	$total[13] = $levelFormatComp;
+	$total[14] =  $app->profileFileName;
 	
 	return $total;
 }

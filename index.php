@@ -35,6 +35,13 @@ $adsType = $result_app[8];
 $adsPos = $result_app[9];
 $adsId = $result_app[10];
 
+if (isset($result_app[14]) && $result_app[14] != '') {
+	if (!isset($_COOKIE['profile']) || $_COOKIE['profile'] == 0) {
+		header('location: profile.php?editmode');
+		exit();
+	}
+}
+
 /**
 * Replace function to set page transitions
 * @param string $pagetransition Transition mode
@@ -51,10 +58,8 @@ function replace($pagetransition,$pageLevel) {
 			$trans = 'data-transition="slidedown"';
 		else if ($pagetransition == 'CurlUp')
 			$trans = 'data-transition="slideup"';
-		else if ($pagetransition == 'slide')
+		else
 			$trans = 'data-transition="slide"';
-		else 
-			$trans = 'data-rel="external" data-ajax="false"';
 	} else {
 		$trans = 'data-rel="external" data-ajax="false"';
 	}
@@ -106,6 +111,9 @@ if ( isset($_GET['level']) && $_GET['level'] != '') {
 * If level not exists, activity is cover.
 */
 } else {
+ $levelId = $result_app[0];
+ $levelTransition = $result_app[11];
+ $levelType = $result_app[3];
  $activity = 'PORTADA';
  $trans = 'data-transition="slide"';
 }
@@ -115,6 +123,10 @@ if ( isset($_GET['level']) && $_GET['level'] != '') {
 */
 
 if ( isset($_GET['data']) && $_GET['data'] != '') {
+	if ($_GET['data'] == 'profile') {
+		header('location: profile.php');
+		exit();
+	}
 	if ( isset($activity) && ($activity != 'PORTADA') ) {
 		if ($activity != '') {
 			/**

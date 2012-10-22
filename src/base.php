@@ -88,7 +88,7 @@
 						}
 						echo'<li>';
 						if ( isset($imageMenu[$x]) && $imageMenu[$x] != '') {
-							$size = GetImageSize($imageMenu[$x]);
+							$size = GetImageSize($assetsPath.$imageMenu[$x]);
 							echo $linkMenu.'<img src="'.$assetsPath.$imageMenu[$x].'" alt="'.$titleMenu[$x].'" style="width: '.$widthMenu[$x].'px; height: '.$heightMenu[$x].'px; margin-left: '.$marginMenu[$x].'px">';
 						} else {
 							echo $linkMenu.$titleMenu[$x];
