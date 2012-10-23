@@ -127,6 +127,9 @@ if ( isset($_GET['data']) && $_GET['data'] != '') {
 		header('location: profile.php');
 		exit();
 	}
+	if ($_GET['data'] == 'search') {
+		header('location: search.php?s');
+	}
 	if ( isset($activity) && ($activity != 'PORTADA') ) {
 		if ($activity != '') {
 			/**

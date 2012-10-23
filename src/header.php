@@ -264,12 +264,20 @@ echo"
 					echo"<h1>".$title."</h1>";
 			} else {
 				if (isset($_COOKIE['profile'])) {
-				echo'<div data-role="navbar">
-					<ul>
-						<li><a href="index.php" data-rel="back" data-role="button">Home</a></li>
-						<li><a href="profile.php?editmode" data-role="button" data-iconpos="right">Editar</a></li>
-					</ul>
-				</div>';
+	 				  if (isset($_GET['s'])) {
+						   echo'<div data-role="navbar">
+						   <ul>
+						       <li><a href="index.php" data-role="button">Home</a></li>
+						   </ul>
+						   </div>';
+					} else {
+						echo'<div data-role="navbar">
+							<ul>
+								<li><a href="index.php" data-role="button">Home</a></li>
+								<li><a href="profile.php?editmode" data-role="button" data-iconpos="right">Editar</a></li>
+							</ul>
+						</div>';
+					}
 				}
 				
 			} 
@@ -296,7 +304,7 @@ echo"
 			  	    		closedir($handle);
 			  		}
 			  	
-			  		if(!empty($images)){ // si tenemos algo que mostrar...
+			  		if(!empty($images)){
 			  	       		$rand_key = array_rand($images, 1);
 			  	        	$src = $images[$rand_key];
 			  	        	echo "<img src='".$src."' class='valign-middle' alt='Publicidad' />";
