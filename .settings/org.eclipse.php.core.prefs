@@ -1,2 +1,3 @@
 eclipse.preferences.version=1
 include_path=0;/emobc-html5/src
+org.eclipse.php.core.phpDoc=false
