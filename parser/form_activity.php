@@ -22,12 +22,12 @@
 
 
 /**
-* Form XML Parser
-*
-* @param string $xml Xml file
-* @param string $data dataId to read
-* @return $total
-*/
+ * Form XML Parser
+ *
+ * @param string $xml Xml file
+ * @param string $data dataId to read
+ * @return $total
+ */
 
 function traer_info($xml, $data){
 	if(!strrpos("__".$xml, "http")){
@@ -36,32 +36,29 @@ function traer_info($xml, $data){
 		$content = file_get_contents($xml);
 		$sx = simplexml_load_string($content);
 	}
-	foreach($sx->data as $item)
-	{
+	foreach($sx->data as $item){
 		if ($data == $item->dataId) {
-			foreach($item->form as $item2)
-			{
+			foreach($item->form as $item2){
 				$actionUrl = $item2->actionUrl;
-				foreach($item2->field as $item3)
-				{
+				foreach($item2->field as $item3){
 					$fieldType[] = $item3->fieldType;
 					$fieldLabel[] = $item3->fieldLabel;
 					$fieldName[] = $item3->fieldName;
-					$fieldParam[] = $item3->fieldParam;					
+					$fieldParam[] = $item3->fieldParam;
 				}
 			}
 			$nextLevelLevelId = $item->nextLevel->nextLevelLevelId;
 			$nextLevelDataId = $item->nextLevel->nextLevelDataId;
 
-		        $total[0] = $nextLevelLevelId;
-		        $total[1] = $nextLevelDataId;
+			$total[0] = $nextLevelLevelId;
+			$total[1] = $nextLevelDataId;
 			$total[2] = $actionUrl;
 			$total[3] = $fieldType;
 			$total[4] = $fieldLabel;
 			$total[5] = $fieldName;
 			$total[6] = $fieldParam;
 		}
-	}		
+	}
 	return $total;
 }
 ?>

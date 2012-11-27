@@ -33,6 +33,7 @@ $bg = 'background:url('.$assetsPath.$background.') repeat;';
 $bg = "background: none;";
 }
 echo '<!DOCTYPE html>
+<html>	
 	<head>';
 	if ( isset($title) )
 	echo'<title>'.$title.'</title>';
@@ -40,10 +41,10 @@ echo '<!DOCTYPE html>
 	<base href="localhost" />
 	<meta http-equiv="Pragma" content="no-cache">
 	<META HTTP-EQUIV="Expires" CONTENT="-1">
-		<link rel="apple-touch-icon" href="apple-touch-icon-57x57.png" />
-		<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png" />
-		<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png" />
-		<link rel="apple-touch-startup-image" href="images/splash.png" />
+	<link rel="apple-touch-icon" href="apple-touch-icon-57x57.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png" />
+	<link rel="apple-touch-startup-image" href="images/splash.png" />
 		<link rel="apple-touch-icon" href="images/icon.png" />
 	<link rel="shortcut icon" href="images/icons/favicon.ico" type="image/x-icon" />
 	<meta http-equiv=\'Content-Type\' content=\'text/html; charset=UTF-8\' />
@@ -186,8 +187,15 @@ echo"
 	";
 	if ( isset($custom_css) )
 		echo $custom_css;
+	$mensaje = "Algo";	
 	echo"
-		<div data-role='header' data-position='fixed' class='align-center' ><!-- HEADER -->";
+		<div data-role='header' data-position='fixed' class='align-center' >
+			<div id='info-message'>
+				<div class='alert alert-success nav-message'>
+				   	<button type='button' class='close' data-dismiss='alert'>". $mensaje . " &#215;</button>
+				</div>
+			</div>
+			<!-- HEADER -->";
 		if ( isset($_GET['level']) && isset($_GET['data']) ) {
 			if ( (isset($levelPoint) && $_GET['level'] != $levelPoint) && (isset($dataPoint) && $_GET['data'] != $dataPoint) ) {
 				if (file_exists($xmlPath.'top_menu.xml')) {

@@ -73,7 +73,8 @@
 					$nextDataMenu = $bot_menu[7];
 				   	echo '
 					<div data-role="navbar">
-						<ul>';
+					   	<ul>';
+				   	
 					for ($x = 0; $x < count($titleMenu); $x++) {
 						if (isset($actionMenu[$x]) && $actionMenu[$x] != "") {
 							if ($actionMenu[$x] == 'back') {
@@ -103,6 +104,7 @@
 		}
 echo"
 </div><!-- PAGINA -->
+	<script type='text/javascript' src='lib/js/bootstrap-alert.js'></script>			
 </body>
 </html>";
 
