@@ -50,11 +50,12 @@ function app($xml){
 	$total[7] = $app->menu->bottomMenu;
 	$total[8] = $app->banner->type;
 	$total[9] = $app->banner->position;
-	$total[10] = $app->banner->id;
-	$total[11] = $levelTransition;
-	$total[12] = $levelFormatBg;
-	$total[13] = $levelFormatComp;
-	$total[14] =  $app->profileFileName;
+	$total[10] = $app->banner->position;
+	$total[11] = $app->banner->idSense;
+	$total[12] = $levelTransition;
+	$total[13] = $levelFormatBg;
+	$total[14] = $levelFormatComp;
+	$total[15] =  $app->profileFileName;
 	
 	return $total;
 }

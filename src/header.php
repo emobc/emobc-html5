@@ -146,6 +146,17 @@ echo "
 	<!-- SCRIPT GALERIA -->
 	<script type='text/javascript' src='lib/js/code.photoswipe-3.0.4.min.js'></script>";
 	?>
+    <script src="socket.io/socket.io.js"></script>
+    <script>
+    // creating a new websocket
+      var socket = io.connect('http://localhost');
+      // on every message recived we print the new datas inside the #container div
+      socket.on('notification', function (data) {
+        $('#container').html(data.sample);
+        $('time').html('Last Update:' + data.time);
+      });
+    </script>
+	
 	<script type="text/javascript">
 		(function(window, $, PhotoSwipe){
 			$('#idGallery').live('pageshow',function(){
@@ -190,6 +201,7 @@ echo"
 	$mensaje = "Algo";	
 	echo"
 		<div data-role='header' data-position='fixed' class='align-center' >
+			<div id='container'>Try to change your xml data to update this content</div>
 			<div id='info-message'>
 				<div class='alert alert-success nav-message'>
 				   	<button type='button' class='close' data-dismiss='alert'>". $mensaje . " &#215;</button>

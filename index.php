@@ -34,6 +34,7 @@ $result_app = app($xmlPath.'app.xml');
 $adsType = $result_app[8];
 $adsPos = $result_app[9];
 $adsId = $result_app[10];
+$adIdSense = $result_app[11];
 
 if (isset($result_app[14]) && $result_app[14] != '') {
 	if (!isset($_COOKIE['profile']) || $_COOKIE['profile'] == 0) {
