@@ -23,8 +23,26 @@
 /**
 * Path include
 */
+
+session_start();
+
 define("RUTA_ABS",dirname(__FILE__));
 include('conf/path.php');
+
+if (isset($_GET["xmlDir"])) {
+$rootPath = RUTA_ABS.'/';
+$classPath = $rootPath.'parser/';
+$assetsPath = $_GET["xmlDir"]."/";
+$_SESSION["xmlDir"] = $assetsPath;
+$xmlPath = $rootPath.$assetsPath.'/xml/';
+$srcPath = $rootPath.'src/';
+}	
+
+if (isset($_SESSION["xmlDir"])) {
+	$assetsPath = $_SESSION["xmlDir"]."/";
+	$xmlPath = $rootPath.$assetsPath.'/xml/';
+	error_log($assetsPath);
+}
 
 /**
 * app parser include
