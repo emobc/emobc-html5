@@ -1090,6 +1090,8 @@ switch ($activity) {
 		}
 		echo'</div>
 		';
+		echo "<center><a href=".$facebook.">Facebook</a> | ";
+		echo "<a href=".$twitter.">Twitter</a></center>";
 	}
 	/**
 	* @ignore
