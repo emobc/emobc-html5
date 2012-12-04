@@ -132,7 +132,7 @@ if ( isset($_GET['level']) && $_GET['level'] != '') {
  $levelId = $result_app[0];
  $levelTransition = $result_app[11];
  $levelType = $result_app[3];
- $activity = 'PORTADA';
+ $activity = 'COVER_ACTIVITY';
  $trans = 'data-transition="slide"';
 }
 
@@ -148,7 +148,7 @@ if ( isset($_GET['data']) && $_GET['data'] != '') {
 	if ($_GET['data'] == 'search') {
 		header('location: search.php?s');
 	}
-	if ( isset($activity) && ($activity != 'PORTADA') ) {
+	if ( isset($activity) && ($activity != 'COVER_ACTIVITY') ) {
 		if ($activity != '') {
 			/**
 			* Activity parser, if activity exists and is not cover
@@ -1042,7 +1042,7 @@ switch ($activity) {
 	/**
 	* cover_activity
 	*/
-	case 'PORTADA':
+	case 'COVER_ACTIVITY':
 	$title = $result[0];
 	$imageFile = $result[6];
 	$facebook = $result[7];
