@@ -55,7 +55,7 @@ echo '<!DOCTYPE html>
 
 <meta name=\'viewport\' content=\'width=device-width, initial-scale=1\'/>
 <meta name="apple-mobile-web-app-capable" content="yes" />
-<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="apple-mobile-web-app-status-bar-style" content="white" />
 <script src="lib/js/jquery-1.7.2.min.js"></script>
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
 <script src="lib/js/jquery.mobile.js"></script>
@@ -256,11 +256,8 @@ echo"
 		         }
 	       } else {
 			if ($activity == 'COVER_ACTIVITY') {
-				if ( isset($imageFile) && $imageFile != '' ) {
-					$size = GetImageSize($assetsPath.$imageFile);
-				   	echo"<div style=\"text-align: center\"><img src='".$assetsPath.$imageFile."' alt='".$title."' height='".$size[1]."'/></div>";
-				}
 				if (!isset($title) || $title != "")
+					if ($imageFile == "") 
 					echo"<h1>".$title."</h1>";
 			} else {
 				if (isset($_COOKIE['profile'])) {
@@ -284,6 +281,10 @@ echo"
 	       }
 		echo"</div>
 		<div data-role='content'><!-- CONTENT -->";
+		if ( isset($imageFile) && $imageFile != '' ) {
+					$size = GetImageSize($assetsPath.$imageFile);
+				   	echo"<div style=\"text-align: center\"><img src='".$assetsPath.$imageFile."' alt='".$title."' height='".$size[1]."'/></div>";
+				}
 			if ($adsPos == "top") {
 				echo "<div class='align-center' id='ads_banner' >";
 				if ($adsType == 'custom') {
