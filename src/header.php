@@ -255,7 +255,7 @@ echo"
 				}
 		         }
 	       } else {
-			if ($activity == 'PORTADA') {
+			if ($activity == 'COVER_ACTIVITY') {
 				if ( isset($imageFile) && $imageFile != '' ) {
 					$size = GetImageSize($assetsPath.$imageFile);
 				   	echo"<div style=\"text-align: center\"><img src='".$assetsPath.$imageFile."' alt='".$title."' height='".$size[1]."'/></div>";
