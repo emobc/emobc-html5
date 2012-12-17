@@ -41,7 +41,9 @@ $srcPath = $rootPath.'src/';
 if (isset($_SESSION["xmlDir"])) {
 	$assetsPath = $_SESSION["xmlDir"]."/";
 	$xmlPath = $rootPath.$assetsPath.'/xml/';
-	error_log($assetsPath);
+} else {
+	$assetsPath = "assets/";
+	$xmlPath = $rootPath.$assetsPath.'/xml/';
 }
 
 /**
@@ -195,6 +197,7 @@ if ( (isset($formatBg) && $formatBg != '') || (isset($formatComp) && $formatComp
 		}
 		$custom_css = '<style type="text/css">';
 		for ($x = 0; $x < count($getFormat); $x++){
+			error_log($getFormat[$x][0]);
 			$ssearch = array_search($getFormat[$x][1],$name);
 			if ($ssearch != 'FALSE') {
 				$custom_css .= '
@@ -1088,10 +1091,18 @@ switch ($activity) {
 		echo'</div>
 		';
 		}
-		echo'</div>
-		';
-		echo "<center><a target='_blank' href=".$facebook.">Facebook</a> | ";
-		echo "<a target='_blank' href=".$twitter.">Twitter</a></center>";
+		echo'</div>';
+		
+		echo "<center>";
+		if ($facebook != '') 
+			echo "<a target='_blank' href=".$facebook.">Facebook</a>";
+		if ($facebook != '' && twitter != '')
+			echo " | ";
+		if ($twitter != '')
+			echo "<a target='_blank' href=".$twitter.">Twitter</a></center>";
+		echo "</center>";
+		if ($web != '')
+			echo "<br/><center><a target='_blank' href=".$web.">Desktop website</a></center>";			
 	}
 	/**
 	* @ignore
