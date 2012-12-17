@@ -197,7 +197,6 @@ if ( (isset($formatBg) && $formatBg != '') || (isset($formatComp) && $formatComp
 		}
 		$custom_css = '<style type="text/css">';
 		for ($x = 0; $x < count($getFormat); $x++){
-			error_log($getFormat[$x][0]);
 			$ssearch = array_search($getFormat[$x][1],$name);
 			if ($ssearch != 'FALSE') {
 				$custom_css .= '
@@ -245,8 +244,12 @@ if ( (isset($formatBg) && $formatBg != '') || (isset($formatComp) && $formatComp
 			}
 			$custom_css = '<style type="text/css">';
 			for ($x = 0; $x < count($getFormat); $x++){
+				var_dump("1");
+				var_dump($name);
+				var_dump("2");
+				var_dump($getFormat[$x][1]);
+				var_dump($getFormat[$x][0]);
 				$ssearch = array_search($getFormat[$x][1],$name);
-				if ($ssearch != 'FALSE') {
 					$custom_css .= '
 					.'.$getFormat[$x][0].' {
 					color: '.$color[$ssearch].';
@@ -254,13 +257,11 @@ if ( (isset($formatBg) && $formatBg != '') || (isset($formatComp) && $formatComp
 					font-weight: '.$type[$ssearch].';
 					font-face: '.$face[$ssearch].';
 					}';
-				}
 			}
 			$custom_css .='</style>';
 		}
 	}
 }
-
 
 switch ($activity) {
 	/**
@@ -493,7 +494,7 @@ switch ($activity) {
 		include($srcPath.'header.php');
 			echo'<div class="ui-grid-solo align-center">
 				<div class="ui-block-a"><h1 class="header">'.$title.'</h1></div>
-				<div class="ui-block-a"><object width="100%" height="500" type="text/html" data="http://www.youtube.com/embed/'.$v[1].'"></object></div>
+				<div class="ui-block-a"><object width="100%" height="300" type="text/html" data="http://www.youtube.com/embed/'.$v[1].'"></object></div>
 			    </div>';
 	/**
 	* @ignore
