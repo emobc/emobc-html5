@@ -493,7 +493,7 @@ switch ($activity) {
 		include($srcPath.'header.php');
 			echo'<div class="ui-grid-solo align-center">
 				<div class="ui-block-a"><h1 class="header">'.$title.'</h1></div>
-				<div class="ui-block-a"><object width="640" height="360" type="text/html" data="http://www.youtube.com/embed/'.$v[1].'"></object></div>
+				<div class="ui-block-a"><object width="100%" height="500" type="text/html" data="http://www.youtube.com/embed/'.$v[1].'"></object></div>
 			    </div>';
 	/**
 	* @ignore
