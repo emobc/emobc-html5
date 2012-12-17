@@ -244,11 +244,6 @@ if ( (isset($formatBg) && $formatBg != '') || (isset($formatComp) && $formatComp
 			}
 			$custom_css = '<style type="text/css">';
 			for ($x = 0; $x < count($getFormat); $x++){
-				var_dump("1");
-				var_dump($name);
-				var_dump("2");
-				var_dump($getFormat[$x][1]);
-				var_dump($getFormat[$x][0]);
 				$ssearch = array_search($getFormat[$x][1],$name);
 					$custom_css .= '
 					.'.$getFormat[$x][0].' {
