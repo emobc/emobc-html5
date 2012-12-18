@@ -505,6 +505,11 @@ switch ($activity) {
 	if ( isset($result[1]) ) {
 		$title = $result[0];
 		$webURL = $result[1];
+		if (strpos($webURL, "http") !== false)
+			$webURL = $webURL;
+		else
+			$webURL = "assets/html/".$webURL;
+
 	/**
 	* @ignore
 	*/
