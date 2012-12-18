@@ -35,15 +35,18 @@ $classPath = $rootPath.'parser/';
 $assetsPath = $_GET["xmlDir"]."/";
 $_SESSION["xmlDir"] = $assetsPath;
 $xmlPath = $rootPath.$assetsPath.'/xml/';
+$htmlPath = $rootPath.$assetsPath.'/html/';
 $srcPath = $rootPath.'src/';
 }	
 
 if (isset($_SESSION["xmlDir"])) {
 	$assetsPath = $_SESSION["xmlDir"]."/";
 	$xmlPath = $rootPath.$assetsPath.'/xml/';
+	$htmlPath = $assetsPath.'/html/';
 } else {
 	$assetsPath = "assets/";
-	$xmlPath = $rootPath.$assetsPath.'/xml/';
+	$xmlPath = $assetsPath.'/xml/';
+	$htmlPath = $assetsPath.'/html/';
 }
 
 /**
@@ -508,8 +511,8 @@ switch ($activity) {
 		if (strpos($webURL, "http") !== false)
 			$webURL = $webURL;
 		else
-			$webURL = "assets/html/".$webURL;
-
+			$webURL = $htmlPath.$webURL;
+error_log("WEB".$webURL);
 	/**
 	* @ignore
 	*/
