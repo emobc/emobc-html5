@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<levelData>
+	<data>
+		<dataId>sale</dataId>
+		<headerText>Game</headerText>
+		<itemDescripcion>Videogame</itemDescripcion>
+		<itemImageFile>images/cover/imageCover.png</itemImageFile>
+		<itemPrice>100</itemPrice>
+	</data>
+</levelData>

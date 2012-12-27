@@ -530,5 +530,13 @@
 			<levelXib/>
 			<levelTransition>slide</levelTransition>
 		</level>
+		<level>
+             <levelId>Sale</levelId>
+             <levelTitle>Sale</levelTitle>
+             <levelFile>sale.xml</levelFile>
+             <levelType>SALE_ACTIVITY</levelType>
+             <levelXib/>
+             <levelTransition>slide</levelTransition>
+         </level>
 	</levels>
 </application>

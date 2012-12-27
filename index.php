@@ -121,6 +121,7 @@ if ( isset($_GET['level']) && $_GET['level'] != '') {
 		*/
 		$activity = '';
 		$file = '';
+		
 		for ($x = 0; $x < count($levelId) ; $x++) {
 			if ( trim($_GET['level']) == trim($levelId[$x]) ) {
 				$activity = $levelType[$x];
@@ -262,6 +263,7 @@ if ( (isset($formatBg) && $formatBg != '') || (isset($formatComp) && $formatComp
 }
 
 switch ($activity) {
+	
 	/**
 	* List_activity
 	*/
@@ -512,7 +514,6 @@ switch ($activity) {
 			$webURL = $webURL;
 		else
 			$webURL = $htmlPath.$webURL;
-error_log("WEB".$webURL);
 	/**
 	* @ignore
 	*/
@@ -826,7 +827,7 @@ error_log("WEB".$webURL);
 	* form_activity
 	*/
 	case 'FORM_ACTIVITY':
-	if ( isset($result[3]) ) {
+	//if ( isset($result[3]) ) {
 		/**
 		* If actionURL not exists, search in app.xml for next level
 		*/
@@ -954,7 +955,7 @@ error_log("WEB".$webURL);
 	* @ignore
 	*/
 		include($srcPath.'base.php');
-	}
+	//}
 	break;
 	
 	/**
@@ -1011,26 +1012,57 @@ error_log("WEB".$webURL);
 	/**
 	* Canvas Activity (NOT IMPLEMENTED YET)
 	*/
-/*	case 'CANVAS_ACTIVITY':
+	case 'CANVAS_ACTIVITY':
 	$pageId = 'idCanvas';
 	include($srcPath.'header.php');
 	echo'
-	<div class="ui-grid-solo align-center">
+
+	
+		<div class="ui-grid-solo align-center">
 		<div class="ui-block-a">
-		<canvas class="pad" style="border: 1px solid #000" id="canvasDiv" width="400px" height="400px"></canvas>
-		</div>
-		<script src="lib/js/jquery.signaturepad.min.js"></script>
-		  <script>
-		    $("#idCanvas").live("pageshow",function(){
-		      $("#canvasDiv").signaturePad({drawOnly:true});
-		    });
-		  </script>
-		   <script src="lib/js/json2.min.js"></script>
+
+	<form method=post action="#" class=sigPad><canvas class=sigPad width=400 height=400></canvas> <input type=hidden name=output class=output> </div> </form> 
 	</div>
+		</div>
+	<script src="lib/js/jquery.signaturepad.min.js"></script> <script>
+  $(document).ready(function () {
+    $(\'.sigPad\').signaturePad({drawOnly:true});
+  });
+</script>
+	
 	';
 	include($srcPath.'base.php');
 	break;
-*/
+
+
+	/**
+	* sale_activity
+	*/
+	case 'SALE_ACTIVITY':
+	if ( isset($result[2]) ) {
+		$title = $result[0];
+		$text = $result[2];
+		$price = $result[3];
+		if ( isset($result[1]) )
+			$image = $result[1];
+	/**
+	* @ignore
+	*/
+		include($srcPath.'header.php');
+		echo'<div class="ui-grid-solo align-center">
+			<div class="ui-block-a"><h1 class="header">'.$title.'</h1></div>
+			<div class="ui-block-a"><font class="basic_text">'.$text.'<br/><br/>'.$price.'€</font></div>';
+		if ( isset($image) && $image != '')
+			echo'<br/><br/><div class="ui-block-a"><img src="'.$assetsPath.$image.'" border="0" style="width: 100%; height: auto;"></div>';
+		echo'
+		</div>';
+	/**
+	* @ignore
+	*/
+		include($srcPath.'base.php');
+	}
+	break;
+
 	/**
 	* QR_activity (only in android/ios version)
 	*/

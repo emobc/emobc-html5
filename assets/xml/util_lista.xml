@@ -69,6 +69,15 @@
 				</nextLevel>
 				<imageFile>images/icons/button_default.png</imageFile>
 			</listItem>
+			<listItem>
+				<description>Sale</description>
+				<text>Sale</text>
+				<nextLevel>
+					<nextLevelLevelId>Sale</nextLevelLevelId>
+					<nextLevelDataId>sale</nextLevelDataId>
+				</nextLevel>
+				<imageFile>images/icons/button_default.png</imageFile>
+			</listItem>
 		</list>
 	</data>
 </levelData>

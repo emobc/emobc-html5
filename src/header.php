@@ -186,9 +186,20 @@ echo"
 	";
 	if ( isset($custom_css) )
 		echo $custom_css;
+		
+		$sx = simplexml_load_file($xmlPath."portada.xml");
+	
+if(isset($_GET['level']))
 	echo"
 		<div data-role='header' data-position='fixed' class='align-center' ><!-- HEADER -->";
-		if ( isset($_GET['level']) && isset($_GET['data']) ) {
+else {
+	if (empty($sx->titleFileName))
+		echo "<div data-role='header' data-position='fixed' class='align-center' ><!-- HEADER -->";
+	else
+		echo "<div data-role='' data-position='fixed' class='align-center' ><!-- HEADER -->";
+}
+
+	if ( isset($_GET['level']) && isset($_GET['data']) ) {
 			if ( (isset($levelPoint) && $_GET['level'] != $levelPoint) && (isset($dataPoint) && $_GET['data'] != $dataPoint) ) {
 				if (file_exists($xmlPath.'top_menu.xml')) {
 					/**

@@ -4,6 +4,6 @@
 		<dataId>Contenedor Web Html</dataId>
 		<headerText>Contenedor Web Html</headerText>
 		<local>true</local>
-		<webUrl>assets/html/prueba.html</webUrl>
+		<webUrl>prueba.html</webUrl>
 	</data>
 </levelData>

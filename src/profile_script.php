@@ -20,6 +20,26 @@
  *
  */
 
+if (isset($_GET["xmlDir"])) {
+$rootPath = RUTA_ABS.'/';
+$classPath = $rootPath.'parser/';
+$assetsPath = $_GET["xmlDir"]."/";
+$_SESSION["xmlDir"] = $assetsPath;
+$xmlPath = $rootPath.$assetsPath.'/xml/';
+$htmlPath = $rootPath.$assetsPath.'/html/';
+$srcPath = $rootPath.'src/';
+}	
+
+if (isset($_SESSION["xmlDir"])) {
+	$assetsPath = $_SESSION["xmlDir"]."/";
+	$xmlPath = $rootPath.$assetsPath.'/xml/';
+	$htmlPath = $assetsPath.'/html/';
+} else {
+	$assetsPath = "assets/";
+	$xmlPath = $assetsPath.'/xml/';
+	$htmlPath = $assetsPath.'/html/';
+}
+
 $sx = simplexml_load_file($xmlPath.'profile.xml');
 foreach ($sx->field as $field) {
 $fieldType[] = $field->fieldType;
@@ -27,6 +47,7 @@ $fieldName[] = $field->fieldName;
 $fieldLabel[] = $field->fieldLabel;
 $fieldParam[] = $field->fieldParam;
 }
+
 if (isset($_COOKIE['profile'])) {
 	foreach ($_COOKIE as $name => $val) {
 		$label[] = trim($name);
