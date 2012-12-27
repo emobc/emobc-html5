@@ -72,7 +72,7 @@ if (isset($result_app[14]) && $result_app[14] != '') {
 * @return $trans Transition
 */
 function replace($pagetransition,$pageLevel) {
-	if ( ($pageLevel != 'CALENDAR_ACTIVITY') && ($pageLevel != 'MAP_ACTIVITY') ) {
+	if ( ($pageLevel != 'CALENDAR_ACTIVITY') && ($pageLevel != 'MAP_ACTIVITY') && $pageLevel != 'CANVAS_ACTIVITY') {
 		if ($pagetransition == 'flipLeft')
 			$trans = 'data-transition="reverse flip"';
 		else if ($pagetransition == 'flipRight')
@@ -1020,11 +1020,10 @@ switch ($activity) {
 	
 		<div class="ui-grid-solo align-center">
 		<div class="ui-block-a">
-
-	<form method=post action="#" class=sigPad><canvas class=sigPad width=400 height=400></canvas> <input type=hidden name=output class=output> </div> </form> 
+	<form method=post action="#" class=sigPad><canvas class=sigPad height="400" width="400"></canvas> <input type=hidden name=output class=output> </div> </form> 
 	</div>
 		</div>
-	<script src="lib/js/jquery.signaturepad.min.js"></script> <script>
+	<script src="http://static.thomasjbradley.ca/signature-pad/jquery.signaturepad.min.js"></script> <script>
   $(document).ready(function () {
     $(\'.sigPad\').signaturePad({drawOnly:true});
   });
