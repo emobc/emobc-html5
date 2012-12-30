@@ -538,5 +538,13 @@
              <levelXib/>
              <levelTransition>slide</levelTransition>
          </level>
+         <level>
+             <levelId>chat</levelId>
+             <levelTitle>chat</levelTitle>
+             <levelFile>chat.xml</levelFile>
+             <levelType>CHAT_ACTIVITY</levelType>
+             <levelXib/>
+             <levelTransition>slide</levelTransition>
+         </level>
 	</levels>
 </application>

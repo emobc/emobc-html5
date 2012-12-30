@@ -78,6 +78,15 @@
 				</nextLevel>
 				<imageFile>images/icons/button_default.png</imageFile>
 			</listItem>
+			<listItem>
+				<description>Chat</description>
+				<text>Chat</text>
+				<nextLevel>
+					<nextLevelLevelId>chat</nextLevelLevelId>
+					<nextLevelDataId>chat</nextLevelDataId>
+				</nextLevel>
+				<imageFile>images/icons/button_default.png</imageFile>
+			</listItem>
 		</list>
 	</data>
 </levelData>
