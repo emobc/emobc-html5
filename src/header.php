@@ -32,6 +32,13 @@ $bg = 'background:url('.$assetsPath.$background.') repeat;';
 } else {
 $bg = "background: none;";
 }
+
+include($classPath."seo.php");
+$seodata = seo($xmlPath."seo.xml");
+$description = $seodata[0];
+$keywords = $seodata[1];
+$author = $seodata[2];
+
 echo '<!DOCTYPE html>
 	<head>';
 	if ( isset($title) )
@@ -40,27 +47,32 @@ echo '<!DOCTYPE html>
 	<base href="localhost" />
 	<meta http-equiv="Pragma" content="no-cache">
 	<META HTTP-EQUIV="Expires" CONTENT="-1">
-		<link rel="apple-touch-icon" href="apple-touch-icon-57x57.png" />
-		<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png" />
-		<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png" />
-		<link rel="apple-touch-startup-image" href="images/splash.png" />
-		<link rel="apple-touch-icon" href="images/icon.png" />
+	<link rel="apple-touch-icon" href="apple-touch-icon-57x57.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png" />
+	<link rel="apple-touch-startup-image" href="images/splash.png" />
+	<link rel="apple-touch-icon" href="images/icon.png" />
 	<link rel="shortcut icon" href="images/icons/favicon.ico" type="image/x-icon" />
 	<meta http-equiv=\'Content-Type\' content=\'text/html; charset=UTF-8\' />
-
+	
+	<!-- SEO -->
+	<meta name="description" content="'.$description.'">
+	<meta name="keywords" content="'.$keywords.'">
+	<meta name="author" content="'.$author.'">
+    
 	<!-- JQUERY MOBILE -->
+	<link rel="stylesheet" href="css/jquery-ui-1.8.22.custom.css">
+	<link rel="stylesheet" href="css/jquery.mobile-1.1.1.css" />
 
-<link rel="stylesheet" href="css/jquery-ui-1.8.22.custom.css">
-<link rel="stylesheet" href="css/jquery.mobile-1.1.1.css" />
-
-<meta name=\'viewport\' content=\'width=device-width, initial-scale=1\'/>
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<meta name="apple-mobile-web-app-status-bar-style" content="white" />
-<script src="lib/js/jquery-1.7.2.min.js"></script>
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
-<script src="lib/js/jquery.mobile.js"></script>
-
-';
+	<meta name=\'viewport\' content=\'width=device-width, initial-scale=1\'/>
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="white" />
+	<script src="lib/js/jquery-1.7.2.min.js"></script>
+	<script src="lib/js/jquery.mobile.js"></script>';
+	
+	if ($activity == "MAP_ACTIVITY")
+		echo '<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>';
+	
 	if (isset($dateEvent) && isset($titleEvent)) {
 	echo '
 	<!-- JQUERY DATEPICKER -->
@@ -139,6 +151,7 @@ $('#idCalendar').live('pageshow',function(){
 </script>
 <?php
 }
+
 echo "
 	<script type=\"text/javascript\" src=\"lib/js/klass.min.js\"></script>
 	<link href=\"css/photoswipe.css\" type=\"text/css\" rel=\"stylesheet\" />
@@ -156,11 +169,11 @@ echo "
 	<!-- Gallery Script -->
 <?php
 echo"
-		<script> 
-			function Oculta() {
-				document.getElementById('precarga').style.display = 'none';
-			}
-		</script>
+	<script> 
+		function Oculta() {
+			document.getElementById('precarga').style.display = 'none';
+		}
+	</script>
 	<style type='text/css'>
 		#precarga{position:absolute; width:100%; height:100%; top:0; left:0; background-color: white; z-index: 16777271;}
 		img{border:none;}

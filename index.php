@@ -585,11 +585,12 @@ switch ($activity) {
              });
             
     	});
+
     </script>
 
 </head>
 
-<body onload="setInterval(\'chat.update()\', 1000)">
+<div onload="setInterval(\'chat.update()\', 1000)">
     <div id="page-wrap">        
         <p id="name-area"></p>
         <div id="chat-wrap"><div id="chat-area"></div></div>        
@@ -598,7 +599,7 @@ switch ($activity) {
             <textarea id="sendie" maxlength = \'100\' ></textarea>
         </form>
     </div>
-</body>
+</div>
 			    </div>';
 	/**
 	* @ignore
