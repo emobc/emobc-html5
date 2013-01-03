@@ -513,19 +513,14 @@ switch ($activity) {
 	* @ignore
 	*/
 		include($srcPath.'header.php');
-			echo'<div class="ui-grid-solo align-center">
-				<div class="ui-block-a"><h1 class="header">'.$title.'</h1></div>
-				</div>
-				    <link rel="stylesheet" href="css/style.css" type="text/css" />
+	echo '<link rel="stylesheet" href="css/style.css" type="text/css" />
     
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script type="text/javascript" src="lib/chat.js"></script>
-    <script type="text/javascript">
+     <script type="text/javascript">
     
         // ask user for name with popup prompt    
         var name = prompt("Enter your chat name:", "Guest");
         
-        // default name is \'Guest\'
     	if (!name || name === \' \') {
     	   name = "Guest";	
     	}
@@ -553,8 +548,7 @@ switch ($activity) {
                      var maxLength = $(this).attr("maxlength");  
                      var length = this.value.length;  
                      
-                     // dont allow new content if length is maxed out
-                     if (length >= maxLength) {  
+                    if (length >= maxLength) {  
                          event.preventDefault();  
                      }  
                   }  
@@ -585,26 +579,38 @@ switch ($activity) {
              });
             
     	});
-
     </script>
+
 
 </head>
 
-<div onload="setInterval(\'chat.update()\', 1000)">
-    <div id="page-wrap">        
+<body onload="setInterval(\'chat.update()\', 1000)">
+
+    <div id="page-wrap">
+    	<div class="ui-grid-solo align-center">
+       		<div class="ui-block-a"><h1 class="header">'.$title.'</h1></div>
+        </div>
         <p id="name-area"></p>
-        <div id="chat-wrap"><div id="chat-area"></div></div>        
+        
+        <div id="chat-wrap"><div id="chat-area"></div></div>
+        
         <form id="send-message-area">
-            <p>Mensaje: </p>
+            <p>Your message: </p>
             <textarea id="sendie" maxlength = \'100\' ></textarea>
         </form>
+    
     </div>
-</div>
-			    </div>';
+
+</body>
+
+';
+
+	include($srcPath.'base.php');
+
 	/**
 	* @ignore
 	*/
-		include($srcPath.'base.php');
+		//include($srcPath.'base.php');
 	
 	break;
 	

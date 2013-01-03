@@ -34,10 +34,17 @@ $bg = "background: none;";
 }
 
 include($classPath."seo.php");
-$seodata = seo($xmlPath."seo.xml");
-$description = $seodata[0];
-$keywords = $seodata[1];
-$author = $seodata[2];
+
+if (file_exists($xmlPath.'seo.xml')) {
+	$seodata = seo($xmlPath."seo.xml");
+	$description = $seodata[0];
+	$keywords = $seodata[1];
+	$author = $seodata[2];
+} else {
+	$description = "Web Mobile: eMobc com";
+	$keywords = "web, mobile, emobc";
+	$author = "eMobc";
+}
 
 echo '<!DOCTYPE html>
 	<head>';
@@ -184,7 +191,8 @@ echo"
 		.center-ads{margin: 0 auto;}
 	</style>
 </head>
-<body onload='Oculta()'>
+
+
 	<!-- SPLASH DIV -->";
 	if ($_SESSION["start"] != 1) {
 	echo"<div id='precarga' class='align-center'><img src='images/splash.png' width='100%' height='100%' alt='splash'></div>";
