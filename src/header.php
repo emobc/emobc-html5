@@ -28,7 +28,7 @@ if (!isset($_SESSION["start"]) || $_SESSION["start"] != 1) {
 }
 
 if (isset($background) && $background != "") {
-$bg = 'background:url('.$assetsPath.$background.') repeat;';
+$bg = 'background:url('.$assetsPath.$background.') no-repeat center center fixed; background-size:cover;';
 } else {
 $bg = "background: none;";
 }
